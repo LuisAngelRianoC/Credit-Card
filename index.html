@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjeta perzonalizable</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <div class="contenedor">
+      
+      <header class="menu">
+        <input type="text" class="nom-input" id="nom" placeholder="Nombre" required />
+        <input type="number" class="num-input1" id="num1" placeholder="0000" required />
+        <input type="number" class="num-input2" id="num2" placeholder="0000" required />
+        <input type="number" class="num-input3" id="num3" placeholder="0000" required />
+        <input type="number" class="num-input4" id="num4" placeholder="0000" required />
+      </header>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="front">
+            <img src="img/map.png" class="map-img" />
+            <div class="row">
+              <img src="img/chip.png" width="60px" />
+              <img src="img/visa.png" width="80px" />
+            </div>
+            <div class="row card-no">
+              <p class="number-box1" id="1">0000</p>
+              <p class="number-box2" id="2">0000</p>
+              <p class="number-box3" id="3">0000</p>
+              <p class="number-box4" id="4">0000</p>
+            </div>
+            <div class="row card-holder">
+              <p>Titular</p>
+              <p>Expira</p>
+            </div>
+            <div class="row info">
+              <p class="nom-box" id="nombre">Nombre</p>
+              <p class="fecha" id="fecha">12/12</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="bar"></div>
+            <div class="row ccv">
+              <div>
+                <img src="img/pattern.png" alt="" />
+              </div>
+              <p>082</p>
+            </div>
+            <div class="row sign">
+              <p>FIRMA</p>
+              <img src="img/visa.png" width="80px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <h2>Card Color</h3>
+        <div class="main-color">
+          <h3>First Color</h3>
+          <div class="f-color-card" style="background: #456546;"></div>
+          <div class="f-color-card" style="background: #57e03b"></div>
+          <div class="f-color-card" style="background: #e6d32d"></div>
+          <div class="f-color-card" style="background: #3b88e0"></div>
+          <div class="f-color-card" style="background: #52119c"></div>
+          <div class="f-color-card" style="background: #f0267a"></div>
+          <div class="f-color-card" style="background: #c24444"></div>
+        </div>
+        
+        <div class="secont-color">
+          <h3>Second Color</h3>
+          <div class="s-color-card" style="background: #e6d32d;"></div>
+          <div class="s-color-card" style="background: #57e03b"></div>
+          <div class="s-color-card" style="background: #e6d32d"></div>
+          <div class="s-color-card" style="background: #3b88e0"></div>
+          <div class="s-color-card" style="background: #52119c"></div>
+          <div class="s-color-card" style="background: #f0267a"></div>
+          <div class="s-color-card" style="background: #c24444"></div>
+        </div>
+      </footer>
+
+    </div>
+    <script src="javascript/funciones.js"></script>
+  </body>
+</html>
