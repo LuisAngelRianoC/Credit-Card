@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 :root{
-    --main-color:#73F531;
-    --second-color:#F0F01E;
+    --main-color:#B38867;
+    --second-color:#2d4262;
 }
 
 *{
@@ -15,7 +15,7 @@
 .contenedor{
     width: 100%;
     min-height: 100vh;
-    background: #222;
+    background: #444;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
 .menu{
     position: fixed;
     display: flex;
-    background: #666;
+    background: #222;
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +32,10 @@
     left: 0;
     right: 0;
     padding: 1rem;  
+}
+
+.menu #nom{
+    width: 20rem;
 }
 
 .card{
@@ -139,7 +143,6 @@
 footer{
     position: fixed;
     display: flex;
-    background: #666;
     padding: 1rem;
     justify-content: space-between;
     text-align: center;
@@ -148,11 +151,12 @@ footer{
     right: 0;
 }
 .footer h2{
-    color: #fff;
+    color: var(--main-color);
+    font-size: 2rem;
 }
 .footer h3 {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .main-color, .secont-color{
@@ -168,4 +172,8 @@ footer{
     width: 2rem;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.footer .f-color-card,.s-color-card:hover{
+    transition: cubic-bezier(#444);
 }
