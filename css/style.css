@@ -180,8 +180,6 @@ footer{
   .card{
     width: 400px;
     height: 200px;
-    perspective: 500px;
-    cursor: pointer;
 }
 
 .menu{
@@ -196,7 +194,7 @@ footer{
 }
 
 #chip{
-    width: 15px;
+    width: 25px;
 }
 
 .card-no{
